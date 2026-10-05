@@ -1,0 +1,1 @@
+//2. Agregar a la información de la edad de cada alumno, si la edad del alumno es par se pone en azul y si es impar en verde.
