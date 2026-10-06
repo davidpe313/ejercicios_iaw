@@ -28,7 +28,7 @@ $alumnos = [
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title> 
+        <title>Document</title>
     </head>
     <body>
         <h1>Visualizando el array</h1>
@@ -44,7 +44,13 @@ $alumnos = [
             $genero = null;
             foreach($alumnos as $indice =>  $alumnoGenero) {
                 ?>
-                <tr>
+                <tr style="<?php
+                if ($alumnoGenero[1]=="m") {
+                    echo("color: green");
+                } elseif ($alumnoGenero[1]=="f") {
+                    echo("color: blue");
+                }
+                ?>">
                     <td><?= $indice ?></td>
                     <td><?= $alumnoGenero[0] ?></td>
                     <td><?= $alumnoGenero[1] ?></td>
