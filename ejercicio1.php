@@ -45,9 +45,9 @@ $alumnos = [
             foreach($alumnos as $indice =>  $alumnoGenero) {
                 ?>
                 <tr style="<?php
-                if ($alumnoGenero[1]=="m") {
+                if ($alumnoGenero[1]==="m") {
                     echo("color: green");
-                } elseif ($alumnoGenero[1]=="f") {
+                } elseif ($alumnoGenero[1]==="f") {
                     echo("color: blue");
                 }
                 ?>">
@@ -62,6 +62,3 @@ $alumnos = [
 
     </body>
 </html>
-<?php
-
-?>
